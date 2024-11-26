@@ -9,6 +9,8 @@
 #
 # Define your function and call it to see the result.
 
-
+def simple_interest(principal, rate_of_interest, years):
+    interest = (principal * rate_of_interest * years) / 100
+    return interest
 
 print('Exercise 2:', simple_interest(1000, 5, 2))

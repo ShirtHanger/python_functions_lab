@@ -9,6 +9,12 @@
 #
 # Define the function and call it with different sets of numbers to test.
 
+def product(*args):
+    product = 1
+    for num in args:
+        product *= num
+    return product
+
 
 
 print('Exercise 8:', product(2, 5, 5))

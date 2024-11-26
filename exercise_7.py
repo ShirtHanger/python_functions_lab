@@ -8,6 +8,11 @@
 #
 # Write your function and test its output below.
 
+def calculate_tip(bill, tip):
+    percent = (tip / 100)
+    final_tip = bill * percent
+    return f'You should tip them {final_tip}%'
+
 
 
 print('Exercise 7:', calculate_tip(50, 20))

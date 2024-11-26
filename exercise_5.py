@@ -8,6 +8,12 @@
 #
 # Define the function and then call it below.
 
+def sum_to(num):
+    
+    total = 0
+    for number in range(num + 1):
+        total += number
+    return total
 
 
 print('Exercise 5:', sum_to(6))

@@ -13,6 +13,25 @@
 #
 # Define the function and then call it below.
 
-
+def basicCalculator(num1, num2, operation):
+    
+    valid_inputs = ['add', 'subtract', 'multiply', 'divide']
+    answer = 0
+    if operation.lower() not in valid_inputs:
+        return 'Invalid operation'
+    
+    else:
+        
+        if operation.lower() == 'add':
+            answer = num1 + num2
+        elif operation.lower() == 'subtract':
+            answer = num1 - num2
+        elif operation.lower() == 'multiply':
+            answer = num1 * num2
+        elif operation.lower() == 'divide':
+            answer = num1 // num2
+        return answer
+    
+    
 
 print('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))

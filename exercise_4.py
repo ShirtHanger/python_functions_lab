@@ -12,6 +12,19 @@
 #
 # Define the function and then call it below.
 
+def convert_temperature(temp, unit):
+    imperial_units = ['F', 'fahrenheit']
+    metric_units = ['C', 'celsius']
+    
+    if unit in metric_units: #convert C to F
+        converted_temp = (temp * 9/5) + 32
+        return f'{temp}°C is equal to {converted_temp}°F'
+    elif unit in imperial_units: #convert F to C
+        converted_temp = (temp - 32) * (5/9)
+        return f'{temp}°F is equal to {converted_temp}°C'
+    else:
+        return 'Invalid unit system'
+
 
 
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))

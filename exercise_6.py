@@ -8,6 +8,11 @@
 #
 # Define your function and test it with different inputs.
 
+def largest(*args):
+    # I googled this function
+    largest_num = max(args)
+    return largest_num
+
 
 
 print('Exercise 6:', largest(1, 2, 3))

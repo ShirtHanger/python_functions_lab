@@ -9,6 +9,10 @@
 #
 # Define your function and call it below.
 
+def calculate_area_triangle(base, height):
+    area = (base * height) / 2
+    return area
+
 
 
 print('Exercise 1:', calculate_area_triangle(10, 5))
